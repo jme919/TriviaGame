@@ -2,9 +2,12 @@ var $corrArr = ["philippines", "murray", "brazil", "usa", "jordan", "montevideo"
 var $numCorr = 0;               //number of correct answers//
 var $numWrong = 0;				//number of incorrect answers//							
 var $numUnanswered = 0;			//number of questions that were not answered at all//
-var $picked;					//the radio button that was chosen//
-var $count = 0;                 //keep track of questions answered//
-
+var $picked;					//the radio button that was chosen//  
+var $score = $("#score");
+var $timer = $("#timer");
+var $start = $("#start");
+var $main = $("#main");
+               
 
 
 
@@ -12,6 +15,16 @@ var $count = 0;                 //keep track of questions answered//
 
 $(function() {
 	console.log("Its alive");
+
+	$start.on("click", function(){
+		$start.css({display:none});
+		$main.css({display:inline});
+
+	});
+
+	
+
+
 
 	$(":radio").on("click",function(){
 

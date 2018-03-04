@@ -60,3 +60,13 @@ button{
 .answers{
 
 }
+
+#score{
+	background-color: #d3d3d3;
+	text-align: center;
+	font-size: 18px;
+	padding:15px;
+	margin-top: 20px;
+	display: none;
+
+}
