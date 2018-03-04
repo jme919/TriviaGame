@@ -17,8 +17,11 @@ $(function() {
 	console.log("Its alive");
 
 	$start.on("click", function(){
-		$start.css({display:none});
-		$main.css({display:inline});
+		$start.css("display","none");
+		console.log($start);
+		$main.css("display","inline");
+		console.log($main);
+		$timer.css("display","inline");
 
 	});
 
