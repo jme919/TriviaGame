@@ -16,6 +16,17 @@
   </div>
 </div>
 
+<!--button to start the game-->
+<div class="container">
+	<div class = "row">
+		<div class="col-md-8 offset-2" id="start">
+			<p>Press the start button to begin the quiz. You will have one minute to finish, so pick fast, and pick wisely!</p>
+			<button type="button" class="btn btn-primary btn-lg ">Start Game</button>
+		</div>
+	</div>
+</div>
+
+<!--timer div-->
 <div class="container">
 	<div class="row">
 		<div class="col-md-4 offset-4" id="timer">
@@ -23,6 +34,8 @@
 		</div>	
 	</div>	
 </div>
+
+<!--main div with all of the questions and answers-->
 <div class="container">
 	<div class="row">
 		<div class="col-md-10 offset-1" id="main">
@@ -44,7 +57,7 @@
 			<p class="question">What is the longest river in Australia?</p>
 			
 			<p class="answers">
-				<INPUT TYPE="radio" NAME="q1" VALUE="Murray">Murray</INPUT>
+				<INPUT TYPE="radio" NAME="q1" VALUE="murray">Murray</INPUT>
 				&nbsp;&nbsp;&nbsp;&nbsp;
 				<INPUT TYPE="radio" NAME="q1" VALUE="false">Darling</INPUT>
 				&nbsp;&nbsp;&nbsp;&nbsp;
@@ -172,6 +185,13 @@
 
 
 </div>	
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 offset-2">
+			<span id="score"></span>
+		</div>	
+	</div>		
 <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="" src="assets/javascript/app.js"></script>
 </body>

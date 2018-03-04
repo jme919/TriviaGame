@@ -18,8 +18,8 @@ $(function() {
 		var $picked = $(this).val();
 
 		console.log("Picked: " + $picked);
-		$count++;
-		console.log($count);
+		
+		
 
 
 	for (var i = 0; i < $corrArr.length; i++) {
@@ -28,13 +28,13 @@ $(function() {
 			$numCorr++;
 			console.log($numCorr);
 
-		}
-
-	} else {
+		} else {
 		console.log("wrong!");
 		$numWrong++;
 		console.log("")
 	}
+
+	} 
     
 
 
