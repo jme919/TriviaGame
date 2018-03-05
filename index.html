@@ -20,7 +20,7 @@
 <div class="container">
 	<div class = "row">
 		<div class="col-md-8 offset-2" id="start">
-			<p>Press the start button to begin the quiz. You will have one minute to finish, so pick fast, and pick wisely!</p>
+			<p>Press the start button to begin the quiz. You will have <strong>1 minute and 20 seconds to finish</strong>, so pick fast, and pick wisely!</p>
 			<button type="button" class="btn btn-primary btn-lg ">Start Game</button>
 		</div>
 	</div>
@@ -30,7 +30,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-4 offset-4" id="timer">
-			######
+			
 		</div>	
 	</div>	
 </div>
@@ -163,8 +163,9 @@
 				<INPUT TYPE="radio" NAME="9" VALUE="false">Yemen</INPUT>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<INPUT TYPE="radio" NAME="9" VALUE="false">Ecuador</INPUT></p>
-
+			<div id="finish">
 			<button type="button" class="btn btn-primary btn-lg">Finish!</button>
+		    </div>
 		
 			
 
@@ -190,8 +191,10 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-8 offset-2">
-			<span id="score"></span>
+		<div class="col-md-8 offset-2" id="score">
+			<p>Correct:<span id="right"></span></p>
+			<p>Wrong: <span id="wrong"></span></p>
+
 		</div>	
 	</div>		
 <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
