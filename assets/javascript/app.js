@@ -7,14 +7,16 @@ var $score = $("#score");
 var $timer = $("#timer");
 var $start = $("#start");
 var $main = $("#main");
-               
+var answerArr = [];   
 
 
 
+//create a timer//
 
 
 $(function() {
 	console.log("Its alive");
+
 
 	$start.on("click", function(){
 		$start.css("display","none");
@@ -25,32 +27,46 @@ $(function() {
 
 	});
 
+
+	//create a function for a timer//
+
+
 	
 
-
-
+//when a radio button is clicked the value is stored in a new array//
 	$(":radio").on("click",function(){
 
-		var $picked = $(this).val();
+		//var $picked = $(this).val();
 
-		console.log("Picked: " + $picked);
+		//console.log("Picked: " + $picked);//
+
+		answerArr[$(this).attr("name")] = $(this).val();
+		console.log(answerArr);
 		
 		
 
-
+		//compare the two arrays to see if answer is correct//
 	for (var i = 0; i < $corrArr.length; i++) {
-		if($picked == $corrArr[i]){
-			console.log("correct!");
+		if(answerArr === $corrArr[i]){
+			console.log("correct");
 			$numCorr++;
 			console.log($numCorr);
 
-		} else {
-		console.log("wrong!");
-		$numWrong++;
-		console.log("")
+		//} else  {
+		//console.log("wrong!");
+		//$numWrong++;
+		//console.log($numWrong);//
 	}
 
 	} 
+
+	for (var i = 0; i < answerArr.length; i++) {
+		if(answerArr[i] != $corrArr[i]){
+			console.log("wrong");
+			$numWrong++;
+			console.log($numWrong);
+		}
+	}
     
 
 
