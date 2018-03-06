@@ -23,9 +23,13 @@ var counter;
 
 function timer()
 {
+  if (counter ===undefined){ counter = setInterval(timer, 1000);
+  } //1000 will  run it every 1 second	
   count=count-1;
-  if (count <= 0)
-  { counter =setInterval(timer, 1000); //1000 will  run it every 1 second
+  
+
+  if (count <= 0){ 
+
      clearInterval(counter);
      $main.css("display","none");
 		console.log($finish);
@@ -99,6 +103,7 @@ function timer()
 		$score.css("display","inline");
 		console.log($main);
 		$timer.css("display","none");
+		
 
 	
 
